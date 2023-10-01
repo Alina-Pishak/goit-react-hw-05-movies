@@ -1,5 +1,5 @@
 import { Container, NavLink } from 'components/App/App.styled';
-import { useRef } from 'react';
+import { useRef, Suspense } from 'react';
 import { useLocation, Outlet } from 'react-router-dom';
 import {
   Link,
@@ -54,7 +54,9 @@ const Movie = ({
           </li>
         </MovieAdditionalList>
       </MovieAdditionalContainer>
-      <Outlet />
+      <Suspense>
+        <Outlet />
+      </Suspense>
     </Container>
   );
 };
