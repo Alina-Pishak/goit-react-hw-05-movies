@@ -1,10 +1,18 @@
-import MoviesPage from 'pages/MoviesPage/MoviesPage';
+import { lazy } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import HomePage from 'pages/HomePage/HomePage';
 import Layout from 'Layout/Layout';
-import MoviePageDetails from 'pages/MoviePageDetails/MoviePageDetails';
-import MoviesPageCredits from 'pages/MoviePageDetails/MoviesPageCast/MoviesPageCast';
-import MoviesPageReviews from 'pages/MoviePageDetails/MoviePageReviews/MoviesPageReviews';
+
+const HomePage = lazy(() => import('../pages/HomePage/HomePage'));
+const MoviesPage = lazy(() => import('../pages/MoviesPage/MoviesPage'));
+const MoviePageDetails = lazy(() =>
+  import('../pages/MoviePageDetails/MoviePageDetails')
+);
+const MoviesPageCredits = lazy(() =>
+  import('../pages/MoviePageDetails/MoviesPageCast/MoviesPageCast')
+);
+const MoviesPageReviews = lazy(() =>
+  import('../pages//MoviePageDetails/MoviePageReviews/MoviesPageReviews')
+);
 
 export const App = () => {
   return (
