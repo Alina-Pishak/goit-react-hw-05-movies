@@ -1,4 +1,4 @@
-import { Container, NavLink } from 'components/App/App.styled';
+import { Container, NavLink } from 'components/App.styled';
 import { useRef, Suspense } from 'react';
 import { useLocation, Outlet } from 'react-router-dom';
 import {

@@ -8,7 +8,7 @@ import {
 import { searchMovie } from 'api/movieApi';
 import { useEffect, useCallback, useRef, useState } from 'react';
 import MovieList from 'components/MoviesList/MovieList';
-import { Container } from 'components/App/App.styled';
+import { Container } from 'components/App.styled';
 
 const Movies = () => {
   const [value, setValue] = useState('');

@@ -1,4 +1,4 @@
-import { NavLink } from 'components/App/App.styled';
+import { NavLink } from 'components/App.styled';
 import { useLocation } from 'react-router-dom';
 
 const MovieListItem = ({ title, id }) => {

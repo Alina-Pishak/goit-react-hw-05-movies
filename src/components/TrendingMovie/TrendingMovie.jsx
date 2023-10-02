@@ -1,5 +1,5 @@
 import { getTrendingMovies } from 'api/movieApi';
-import { Container } from 'components/App/App.styled';
+import { Container } from 'components/App.styled';
 import MovieList from 'components/MoviesList/MovieList';
 import { useState, useEffect } from 'react';
 

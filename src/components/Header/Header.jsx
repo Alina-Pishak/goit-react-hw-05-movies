@@ -1,4 +1,4 @@
-import { NavLink } from 'components/App/App.styled';
+import { NavLink } from 'components/App.styled';
 import { HeaderContainer } from './Header.styled';
 
 const Header = () => {
